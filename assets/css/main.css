@@ -1,0 +1,50 @@
+/* Font import */
+@font-face{
+    font-family: Noto sans CJ Kjp;
+    src: url('../fonts/NotoSerifJP/NotoSerifJP-Regular.otf');
+}
+@font-face{
+    font-family: Tomatoes;
+    src: url("../fonts/TOMATOES Personal Use.ttf");
+}
+@font-face{
+    font-family: Noto-Serif-Jp;
+    src: url("../fonts/NotoSerifJP/NotoSerifJP-Regular.otf");
+}
+@font-face{
+    font-family: fontAwesome;
+    src: url("../fonts/fontawesome-webfont.ttf");
+}
+
+/* text font */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif !important;
+}
+/* column padding remove */
+.col-lg-12,.col-md-12{
+padding-left: 0px;
+padding-right: 0px;
+}
+/* carousel caption in middle */
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    top: 56%;
+    transform: translate(0,-56%);
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+   
+}
+
+
+

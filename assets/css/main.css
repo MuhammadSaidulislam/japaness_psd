@@ -1,31 +1,114 @@
 /* Font import */
 @font-face{
-    font-family: Noto sans CJ Kjp;
-    src: url('../fonts/NotoSerifJP/NotoSerifJP-Regular.otf');
+    font-family: KozGoPr6N-Regular;
+    src: url('../fonts/KozGoPr6N-Regular.otf');
 }
 @font-face{
-    font-family: Tomatoes;
-    src: url("../fonts/TOMATOES Personal Use.ttf");
+    font-family: NotoSansArmenian;
+    src: url("../fonts/NotoSansArmenian.ttc");
 }
 @font-face{
-    font-family: Noto-Serif-Jp;
-    src: url("../fonts/NotoSerifJP/NotoSerifJP-Regular.otf");
+    font-family: NotoSansCJKjp-Black;
+    src: url("../fonts/NotoSansCJKjp-Black.otf");
 }
 @font-face{
-    font-family: fontAwesome;
-    src: url("../fonts/fontawesome-webfont.ttf");
+    font-family: NotoSansCJKjp-Bold;
+    src: url("../fonts/NotoSansCJKjp-Bold.otf");
 }
-
+@font-face{
+    font-family: NotoSansCJKjp-DemiLight;
+    src: url("../fonts/NotoSansCJKjp-DemiLight.otf");
+}
+@font-face{
+    font-family: NotoSansCJKjp-Light;
+    src: url("../fonts/NotoSansCJKjp-Light.otf");
+}
+@font-face{
+    font-family: NotoSansCJKjp-Medium;
+    src: url("../fonts/NotoSansCJKjp-Medium.otf");
+}
+@font-face{
+    font-family: NotoSansCJKjp-Regular;
+    src: url("../fonts/NotoSansCJKjp-Regular.otf");
+}
 /* text font */
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif !important;
+   
 }
 /* column padding remove */
 .col-lg-12,.col-md-12{
 padding-left: 0px;
 padding-right: 0px;
+}
+/* top header */
+.top-header{
+background-image: url("../images/top-header.png");
+height: 430px;
+width: auto;
+background-position: center center; 
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+.navbar-nav li a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: NotoSansCJKjp-Bold;
+}
+.top-header .headerText{
+margin-top: 20%;
+}
+.top-header .headerText h1{
+    color: #fff;
+}
+.top-header .headerText p{
+    color: #fff;
+}
+.top-header .headerText .imgWrapper{
+    position: relative;
+text-align: center;
+color: white;
+
+}
+.top-header .headerText .centered {
+    position: absolute;
+    bottom: 48%;
+    right: 16px;
+}
+
+
+
+
+/* category-slider */
+
+.category-slider{
+    margin: 100px 0px;
+}
+.category-slider .dateBackground{
+    background-color: #A7A8A6;
+    padding: 50px 20px;
+    margin-top: 100px;
+}
+.dateBackground .categoryCenter p{
+    font-size: 12px;
+color: black;
+}
+.dateBackground .categoryCenter button{
+    font-size: 12px;
+    background-color: #0030B8;
+    width: 150px;
+    color: #fff;
+}
+.category-details .setSlider{
+    margin-top: 210px;
+}
+.category-details .slideImg-two img{
+    margin-top: 100px;
+}
+.category-details .slideImg-one img{
+    margin-top: 100px;
 }
 /* carousel caption in middle */
 .carousel-caption{
@@ -39,6 +122,130 @@ padding-right: 0px;
     padding-bottom: 20px;
     text-align: center;
 }
+.categoryCenter{
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+#wrapper{
+    display:-webkit-flex;
+    -webkit-justify-content:center;
+    display:flex;
+    justify-content:center;
+}
+
+/* menu-section */
+.menu-section{
+    margin: 100px 0px;
+}
+
+
+/* employee-section */
+
+.employee-section{
+    margin: 100px 0px;
+}
+.employee-section .paragraphText{
+    margin: 40px 0px;
+}
+
+
+/* customer-section */
+.customer-section h5 {
+    margin-left: 50%;
+    margin-top: 10%;
+    font-size: 28px;
+    color: #fff;
+    font-family: NotoSansCJKjp-Bold;
+    line-height: 2;
+}
+
+
+
+/* display-consultation section */
+.display-consultation{
+    background-color: blue;
+    padding: 100px 0px;
+}
+.display-consultation h3{
+    font-family: NotoSansCJKjp-Bold;
+}
+.display-consultation .centerImg{
+    margin: 15px 0px;
+    width: 120px;
+    height: 55px;
+}
+.display-consultation .categoryCenter span{
+    font-family: NotoSansCJKjp-Bold;
+   color: blue;
+}
+.display-consultation .categoryCenter p{
+    color: #fff;
+    text-align: center;
+    font-family: NotoSansCJKjp-DemiLight;
+ }
+ .display-consultation .categoryCenter p .smallText{
+    font-size: 8px;
+    color: #fff;
+ }
+.display-consultation .categoryCenter .whiteBox{
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    border-radius: 2px;
+}
+
+/* customer-section */
+.customer-section{
+    background-image: url("../images/customer.png");
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/* display-service */
+.display-service{
+    margin: 100px 0px;
+}
+.display-service h5{
+    font-family: NotoSansCJKjp-Bold;
+}
+.display-service p{
+    font-family: NotoSansCJKjp-Regular;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+/* Footer section */
+.footer-section{
+    background-image: url("../images/top-header.png");
+background-position: center; 
+background-repeat: no-repeat;
+background-size: cover; 
+padding: 60px 0px;
+
+}
+.footer-section a{
+    text-decoration: none;
+    display: inline-block;
+    color: #222;
+    font-family: NotoSansCJKjp-Medium;
+}
+.footer-section button,
+.footer-section p{
+    color: #222;
+    font-family: NotoSansCJKjp-Medium;
+}
+.footer-section h6{
+    font-family: NotoSansCJKjp-Bold;
+}
+.side-footer-button button{
+    width: 160px;
+    text-align: center;
+    color: #fff;
+    /* padding: 12px 35px; */
+}
+
 
 /* responsive  */
 

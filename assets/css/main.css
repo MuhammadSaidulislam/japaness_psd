@@ -45,7 +45,7 @@ padding-right: 0px;
 /* top header */
 .top-header{
 background-image: url("../images/top-header.png");
-height: 430px;
+height: 930px;
 width: auto;
 background-position: center center; 
 background-repeat: no-repeat;
@@ -54,8 +54,7 @@ background-size: 100% 100%;
 .navbar-nav li a{
     color: black;
     font-size: 16px;
-    font-weight: bold;
-    font-family: NotoSansCJKjp-Bold;
+    font-family: NotoSansCJKjp-Medium;
 }
 .top-header .headerText{
 margin-top: 20%;
@@ -81,8 +80,42 @@ color: white;
 .full-body{
     background-color: #ECEDEC;
 }
+.top-header .header-box{
+    margin-top: 100px;
+background-color: #0054CD;
+padding: 80px 20px;
+}
+.top-header .header-box .first-step,
+.top-header .header-box .next-step{
+    color: white;
+    font-size: 14px;
+    font-family: NotoSansCJKjp-Regular;
+}
+.top-header .header-box .header-img img{
+   border-radius: 50%;
+box-shadow: 2px 0px 13px 5px #123d7b;
+}
+.nav-black{
+    background-color: black;
+    color: white;
+}
+.nav-black button{
+ 
+    color: white;
+}
 
-
+.header-bottom .header-border{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.top-header .header-bottom{
+margin-top: 100px;
+}
+.top-header .header-bottom p{
+    font-size: 14px;
+    color: black;
+    font-family: NotoSansCJKjp-Medium;
+}
 /* category-slider */
 
 .category-slider{
@@ -174,8 +207,41 @@ color: black;
     font-family: NotoSansCJKjp-Bold;
     line-height: 2;
 }
+.delivery-section .left-img img{
+    margin-top: -20px;
+}
 
+.delivery-section .delivery-right-box{
+    padding: 50px 40px;
+}
 
+.delivery-section .delivery-right-box #wrapper #c1 h3{
+    font-family: NotoSansCJKjp-Medium;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding-right: 10px;
+}
+.delivery-section .delivery-right-box .delivery-paragraph p{
+    font-size: 14px;
+    color: black;
+    font-family: NotoSansCJKjp-Medium;
+}
+
+.delivery-section #wrapper #c1 h3{
+    font-size: 24px;
+    color: black;
+    font-family: NotoSansCJKjp-Regular;
+}
+
+.delivery-section #wrapper #c2 img{
+  width: 80px;
+  height: 40px;
+}
+.delivery-section .delivery-paragraph p{
+    font-size: 14px;
+    color: black;
+    font-family: NotoSansCJKjp-Regular;
+}
 
 /* display-consultation section */
 .display-consultation{
@@ -209,29 +275,91 @@ color: black;
     padding: 20px 0px;
     border-radius: 2px;
 }
+/* practical-show */
+.practical-show{
+    margin: 100px 0px;
+}
+.practical-show .smallLogo #c2 img{
+    height: 30px;
+    width: 100px;
+    margin-right: 25px;
+
+}
+.practical-show .smallLogo #c1 h3{
+   font-size: 18px;
+   color: black;
+   font-family: NotoSansCJKjp-Regular;
+   font-weight: 700;
+}
+.practical-show .practical-paragraph {
+   margin-top: 35px;
+}
+.practical-show .practical-paragraph p{
+    font-family: NotoSansCJKjp-Medium;
+    font-size: 14px;
+    color: black;
+}
+.practical-show .practical-paragraph h5{
+    font-family: NotoSansCJKjp-Regular;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    margin: 20px 0px;
+}
+.practical-show .bgcWhite{
+    background-color: #fff;
+    padding: 35px 0px;
+    height: 260px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px -1px #000;
+}
+
+
+/* corporate-show */
+.corporate-show .delivery-paragraph{
+    margin-top: 100px;
+}
+.corporate-show .delivery-paragraph h3{
+    font-family: NotoSansCJKjp-Regular;
+    font-size: 24px;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+}
+.corporate-show .delivery-paragraph p{
+    font-family: NotoSansCJKjp-Medium;
+    font-size: 14px;
+  color: #000;
+}
+.corporate-show .right-img img{
+    position: relative;
+    z-index: 9999;
+}
 /* visual-show */
 .visual-show .delivery-visual-text h3{
 font-size: 24px;
 font-family: NotoSansCJKjp-Regular;
 }
 .visual-show .delivery-visual-text p{
+    font-family: NotoSansCJKjp-Medium;
     font-size: 14px;
-    font-family: NotoSansCJKjp-Regular;
+  color: #000;
 }
 .delivery-logo{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
     margin-bottom: 100px;
-    z-index: 999;
-    padding: 100px 100px;
+    z-index: 1;
+    padding-top: 100px;
     margin-right: 50px;
     margin-left: 50px;
     border-radius: 15px; 
+    margin-top: -20px;
+    box-shadow: 0px 0px 11px -1px #000;
 }
 .delivery-logo .delivery-paragraph p{
-    font-family: NotoSansCJKjp-Regular;
+    font-family: NotoSansCJKjp-Medium;
     font-size: 14px;
-    font-weight: 800;
+    color: #000;
 }
 /* delivery-car */
 .delivery-car{
@@ -243,17 +371,18 @@ font-family: NotoSansCJKjp-Regular;
     margin-right: 50px;
     margin-left: 50px;
     border-radius: 15px;
+    margin-top: -90px;
+    box-shadow: 0px 0px 11px -1px #000;
 }
 .delivery-car .delivery-car-text h1{
-    font-family: NotoSansCJKjp-Regular;
+    font-family: NotoSansCJKjp-Bold;
     font-size: 24px;
     letter-spacing: 0px;
-    margin-bottom: 50px;
 }
 .delivery-car .delivery-car-text p{
-    font-family: NotoSansCJKjp-Regular;
+    font-family: NotoSansCJKjp-Medium;
     font-size: 14px;
-    font-weight: 800;
+    color: #000;
 }
 
 /* customer-section */
@@ -266,18 +395,22 @@ font-family: NotoSansCJKjp-Regular;
 }
 /* corporate-art section */
 .corporate-art .delivery-paragraph h3{
-    font-family: NotoSansCJKjp-Regular;
-    font-size: 24px;
+    font-family: KozGoPr6N-Regular;
+    font-size: 28px;
     letter-spacing: 0px;
     margin-bottom: 50px;
 }
 .corporate-art .delivery-paragraph p{
-    font-family: NotoSansCJKjp-Regular;
+    font-family: NotoSansCJKjp-Medium;
     font-size: 14px;
-    font-weight: 800;
+    color: #000;
 }
 .corporate-art .left-img{
     margin-top: 120px;
+}
+.corporate-art .left-img img{
+    position: relative;
+    z-index: 9999999;
 }
 .middle-section{
     position: relative;
@@ -288,15 +421,17 @@ font-family: NotoSansCJKjp-Regular;
     margin-right: 50px;
     margin-left: 50px;
     border-radius: 15px;
+    margin-top: -60px;
 }
 .middle-section .delivery-text p{
     font-family: NotoSansCJKjp-Medium;
     font-size: 14px;
     letter-spacing: 0px;
+    color: #000;
 }
 .middle-section .delivery-text h3{
-    font-family: NotoSansCJKjp-Medium;
-    font-size: 18px;
+    font-family: NotoSansCJKjp-Bold;
+    font-size: 22px;
     letter-spacing: 0px;
 }
 /* display-service */
@@ -321,16 +456,19 @@ font-family: NotoSansCJKjp-Regular;
 .delivery-show .delivery-left{
     position: relative;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .delivery-show .delivery-left h2{
+    font-family: NotoSansCJKjp-Bold;
     font-size: 22px;
-    font-family: NotoSansCJKjp-Medium;
     letter-spacing: 3px;
+    color: #000;
+    margin-bottom: 30px;
 }
 .delivery-show .delivery-right p{
-    font-size: 14px;
     font-family: NotoSansCJKjp-Medium;
+    font-size: 14px;
+    color: #000;
 }
 /* Footer section */
 .footer-section{
@@ -345,26 +483,37 @@ font-size: 13px;
 color: black;
 font-family: NotoSansCJKjp-Medium;
 }
+.footer-section .footer-bottom p{
+    font-size: 13px;
+    color: black;
+    font-family: NotoSansCJKjp-Medium;
+    }
 .footer-section .left-footer{
 font-size: 13px;
 text-align: center;
 font-family: NotoSansCJKjp-Medium;
 }
+.footer-section .left-footer img{
+    width: 140px;
+    height: 60px;
+    margin-bottom: 50px;
+}
 .footer-section a{
+    font-family: NotoSansCJKjp-Medium;
     text-decoration: none;
     display: inline-block;
     color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: NotoSansCJKjp-Regular;
+    font-size: 14px;;
 }
 .footer-section button{
-    margin-top: 40px;
+    margin-top: 30px;
     color: #000;
     font-family: NotoSansCJKjp-Medium;
 }
 .footer-section h6{
-    font-family: NotoSansCJKjp-Regular;
+    font-family: NotoSansCJKjp-Medium;
+    color: #000;
+    font-size: 15px;;
 }
 .side-footer-button button{
     width: 160px;

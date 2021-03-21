@@ -789,6 +789,63 @@ font-family: NotoSansCJKjp-Regular;
     color: #000;
 }
 
+/* company-section */
+.company-section{
+    background-color: #ECEDEC;
+    padding: 100px 0px;
+}
+.company-section .carousel-margin{
+    margin-top: -220px;
+}
+.company-section .carousel-bg{
+    position: relative;
+  color: white;
+}
+.company-section .carousel-bg .centered{
+    position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+}
+.company-section .carousel-bg .centered h1{
+  font-size: 25px;
+  color: #fff;
+  font-family: NotoSansCJKjp-Medium;
+}
+.company-section .carousel-bg .centered h4{
+    font-size: 15px;
+    color: #fff;
+    font-family: NotoSansCJKjp-Medium;
+  }
+
+/* .company-section .white-box-carousel{
+    background-color: #fff;
+} */
+.company-section .white-box-carousel .img-carousel{
+   background-color: rgba(255, 255, 255, 0.7); 
+   height: 70px;
+}
+.company-section .white-box-carousel .img-carousel img{
+
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%,0);  
+}
+.company-section .white-box-carousel .carousel-text{
+    padding: 14px 23px;
+    height: 125px;
+    background-color: #fff;
+}
+.company-section .white-box-carousel .carousel-text p{
+font-size: 12px;
+color: #000;
+font-family: NotoSansCJKjp-Medium;
+}
+.company-section .white-box-carousel .sceondnd img{
+    padding-top: 28px;
+
+}
+
 /* customer-section */
 .customer-section{
     /* background-image: url("../images/customer.png"); */

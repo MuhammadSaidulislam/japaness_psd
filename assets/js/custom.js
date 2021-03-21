@@ -42,11 +42,11 @@ AOS.init({
 
 // slider carousel
 $('.owl-carousel').owlCarousel({
-  items: 7,
+  items: 5,
   loop: true,
   nav: false,
   margin: 10,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 1000,
   autoplayHoverPause: true,
   responsive: {
@@ -58,7 +58,7 @@ $('.owl-carousel').owlCarousel({
 
     },
     1000: {
-      items: 7,
+      items: 5,
     }
   }
 })
@@ -67,11 +67,11 @@ $('.owl-carousel').owlCarousel({
 
 // slider carousel
 $('.owl-carousel').owlCarousel({
-  items: 7,
+  items: 5,
   loop: true,
   nav: true,
   margin: 10,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 1000,
   autoplayHoverPause: true,
   navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
@@ -84,7 +84,7 @@ $('.owl-carousel').owlCarousel({
 
     },
     1000: {
-      items: 7,
+      items: 5,
     }
   }
   

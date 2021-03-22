@@ -127,7 +127,7 @@ $('.carouel_2').owlCarousel({
   mouseDrag: true,
   autoplay: true,
   autoplayTimeout: 500,
-  items: 3,
+  items: 5,
   nav: true,
   navText: ["<em class='fa fa-angle-left'></em>", "<em class='fa fa-angle-right'></em>"],
    responsiveClass:true,
@@ -149,12 +149,12 @@ $('.carouel_2').owlCarousel({
 
 $('.carouel_3').owlCarousel({
   loop: true,
-  margin: 10,
   auto: true,
   mouseDrag: true,
   autoplayTimeout: 500,
   autoplay: true,
   dots: false,
+  margin: 10,
   items: 7,
   nav: false,
    navText: false,
@@ -164,7 +164,7 @@ $('.carouel_3').owlCarousel({
              items:1
          },
          568:{
-           items:2
+           items:3
          },
          767:{
            items:5
@@ -190,7 +190,7 @@ $('.carouel_3').owlCarousel({
     split(element);
     $(element + ' span').css('opacity','0')
     $(element + ' span').css('position','relative');
-    in_speed = 100;
+    in_speed = 200;
     count = 0;
     setTimeout(function(){
       count = 0;
@@ -210,4 +210,5 @@ $('.carouel_3').owlCarousel({
   textify('.dash','bounce',500);
   textify('.sub','bounce',500);
   textify('.bounce','bounce',500);
+  textify('.preload','bounce',500);
   

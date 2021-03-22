@@ -6,17 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>つばさロジスティクス</title>
+    <script>
+        $(window).on('load', function() {
+            $('.preloader').addClass('complete')
+        });
+        $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+        
+	});
+    </script>
 </head>
 
 <body>
+
+
+    <div class="preloader">
+        <div class="loader">
+            <h1 class="preload">想いを届ける。</h1>
+            <img class="preload" src="assets/images/logo.png" alt="">
+        </div>
+    </div>
+
 
     <section class="home-header">
         <div class="container">
@@ -83,29 +106,28 @@
                         </div>
                     </nav>
                 </div>
-               <div class="col-md-8 headerText categoryCenter">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="animationText">
-                            <h1 class="bounce">想いを届ける。</h1>
-                        <p class="sub">Corporate Art </p>
-                            <p class="dash">つばさロジスティックスの空</p>
-                            
+                <div class="col-md-8 col-12 headerText categoryCenter">
+                    <div class="row">
+                        <div class="col-md-6 col-12" data-aos="fade-right" data-aos-delay="3000">
+                            <div class="animationText">
+                                <h1 class="bounce">想いを届ける。</h1>
+                                <p class="sub">Corporate Art </p>
+                                <p class="dash">つばさロジスティックスの空</p>
+                            </div>
                         </div>
                         <div class="circleBtn">
                             <a class="btn" href="#slide-down">
                                 <i class="fa fa-arrow-down"></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="col-md-6 imgWrapper" data-aos="fade-left">
-                        <img src="assets/images/car.png" alt="" width="500px" height="200px">
-                        <div class="centered">
-                            <button class="btn">採用情報を見る</button>
+                        <div class="col-md-6 col-12 imgWrapper" data-aos="fade-left" data-aos-delay="3000">
+                            <img src="assets/images/car.png" alt="">
+                            <div class="centered">
+                                <button class="btn">採用情報を見る</button>
+                            </div>
                         </div>
                     </div>
-                   </div>
-               </div>
+                </div>
             </div>
         </div>
     </section>
@@ -123,99 +145,159 @@
                             <img src="assets/images/service.png">
                             <img src="assets/images/company.png">
                             <img src="assets/images/contact.PNG">
-                      </ul>
-                        <!-- <div class="carousel-wrap">
-                            <div class="owl-one owl-carousel owl-theme">
-                                <div class="item"><img src="assets/images/access.png"></div>
-                                <div class="item"><img src="assets/images/recruit.png"></div>
-                                <div class="item"><img src="assets/images/safty.png"></div>
-                                <div class="item"><img src="assets/images/movie.png"></div>
-                                <div class="item"><img src="assets/images/service.png"></div>
-                                <div class="item"><img src="assets/images/company.png"></div>
-                                <div class="item"><img src="assets/images/contact.PNG"></div>
-                            </div>
-                        </div> -->
+                        </ul>
+
                     </div>
                 </div>
                 <div class="container-fluid dateBackground">
-                   <div class="container-fluid bgcColor">
-                    <div class="col-md-10 categoryCenter">
-                        <div class="row">
-                            <div class="col-md-1 date">2021.6.1</div>
-                            <div class="col-md-2"><button class="btn">プレス</button></div>
-                            <div class="col-md-9">
-                                <p>新サービス〇〇〇〇をリリースしました。食品物流の〇〇の課題を〇〇％削減。〇〇〇〇でビジネス大賞2021〇〇部門〇〇賞を受賞しました。</p>
+                    <div class="container-fluid bgcColor">
+                        <div class="col-md-10 categoryCenter">
+                            <div class="row">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">プレス</button></div>
+                                <div class="col-md-9">
+                                    <p>新サービス〇〇〇〇をリリースしました。食品物流の〇〇の課題を〇〇％削減。〇〇〇〇でビジネス大賞2021〇〇部門〇〇賞を受賞しました。</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-1 date">2021.6.1</div>
-                            <div class="col-md-2"><button class="btn">メディア</button></div>
-                            <div class="col-md-9">
-                                <p>〇〇紙に〇〇〇〇の取り組みが掲載されました。　　→ 詳細はこちら</p>
+                            <div class="row mt-2">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">メディア</button></div>
+                                <div class="col-md-9">
+                                    <p>〇〇紙に〇〇〇〇の取り組みが掲載されました。　　→ 詳細はこちら</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-1 date">2021.6.1</div>
-                            <div class="col-md-2"><button class="btn">お知らせ</button></div>
-                            <div class="col-md-9">
-                                <p>＜夏季休業のお知らせ＞ 2022年8月16～18日は、夏季休業いたします。</p>
+                            <div class="row mt-2">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">お知らせ</button></div>
+                                <div class="col-md-9">
+                                    <p>＜夏季休業のお知らせ＞ 2022年8月16～18日は、夏季休業いたします。</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-1 date">2021.6.1</div>
-                            <div class="col-md-2"><button class="btn">採用情報</button></div>
-                            <div class="col-md-9">
-                                <p>2022年 新卒採用の募集を開始しましました。サンプルテキストサンプルテキスト</p>
+                            <div class="row mt-2">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">採用情報</button></div>
+                                <div class="col-md-9">
+                                    <p>2022年 新卒採用の募集を開始しましました。サンプルテキストサンプルテキスト</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                   </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="category-details">
-       <div class="container-fluid imgColorset">
-        <div class="container">
+        <div class="container-fluid imgColorset">
             <div class="row">
-                <div class="col-md-9 col-12 categoryCenter">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-12 setSlider">
-                            <div class="category-headline">
-                                <div id="wrapper">
-                                    <div id="c1">
-                                        <img src="assets/images/logo.png" alt="logo">
+                        <div class="col-md-9 col-12 categoryCenter">
+                            <div class="row">
+                                <div class="col-md-4 col-12 setSlider">
+                                    <div class="category-headline">
+                                        <div id="wrapper">
+                                            <div id="c1">
+                                                <img src="assets/images/logo.png" alt="logo">
+                                            </div>
+                                            <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
+                                        </div>
                                     </div>
-                                    <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
+                                    <div class="headline-underline">
+                                        <h5>当たり前から「輸送」を変える。</h5>
+                                    </div>
+                                    <div class="headline-details">
+                                        <p>同じように見える毎日の「運ぶ」仕事から、今日も</p>
+                                        <p>明日につながる気付きを得て、着実に「当たり前」</p>
+                                        <p>を磨き上げています。この積み重ねが品質であると</p>
+                                        <p>私たちは考えています。</p>
+                                        <button class="btn btn-primary">私たちについて</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="headline-underline">
-                                <h5>当たり前から「輸送」を変える。</h5>
-                            </div>
-                            <div class="headline-details">
-                                <p>同じように見える毎日の「運ぶ」仕事から、今日も</p>
-                                <p>明日につながる気付きを得て、着実に「当たり前」</p>
-                                <p>を磨き上げています。この積み重ねが品質であると</p>
-                                <p>私たちは考えています。</p>
-                                <button class="btn btn-primary">私たちについて</button>
+                                <div class="col-md-8 col-12">
+                                    <div class="row">
+                                        <div class="col-md-4 col-4">
+                                            <div class="slideImg-one" data-aos="fade-up-right">
+                                                <img src="assets/images/slider1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-4">
+                                            <div class="slideImg-two" data-aos="fade-up-right">
+                                                <img src="assets/images/slider2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-4">
+                                            <div class="slideImg-three" data-aos="fade-up-right">
+                                                <img src="assets/images/slider.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row third-slide-bottom bgBlue">
+                        <div class="col-md-9 col-12 categoryCenter">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <div class="slideImg-one" data-aos="fade-up-right">
-                                        <img src="assets/images/slider1.png" alt="">
+                                <div class="col-md-6 col-12 middle-content">
+                                    <div data-aos="fade-right">
+                                        <img src="assets/images/safty-box.png" alt="">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="slideImg-two" data-aos="fade-up-right">
-                                        <img src="assets/images/slider2.png" alt="">
+                                <div class="col-md-6 col-12 setSlider">
+                                    <div class="category-headline">
+                                        <div id="wrapper">
+                                            <div id="c1">
+                                                <img src="assets/images/logo.png" alt="logo">
+                                            </div>
+                                            <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="headline-underline">
+                                        <h5>当たり前から「輸送」を変える。</h5>
+                                    </div>
+                                    <div class="headline-details">
+                                        <p>同じように見える毎日の「運ぶ」仕事から、今日も</p>
+                                        <p>明日につながる気付きを得て、着実に「当たり前」</p>
+                                        <p>を磨き上げています。この積み重ねが品質であると</p>
+                                        <p>私たちは考えています。</p>
+                                        <button class="btn btn-primary">私たちについて</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="slideImg-three" data-aos="fade-up-right">
-                                        <img src="assets/images/slider.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container bottom-section">
+                    <div class="row third-slide-bottom">
+                        <div class="col-md-9 col-12 categoryCenter">
+                            <div class="row">
+                                <div class="col-md-6 col-12 setSlider">
+                                    <div class="category-headline">
+                                        <div id="wrapper">
+                                            <div id="c1">
+                                                <img src="assets/images/logo.png" alt="logo">
+                                            </div>
+                                            <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="headline-underlinetwo">
+                                        <h4>私たちが想いを込めて運ぶもの。<br>
+                                            食品輸送・精密機器輸送・運ぶ仕組み。</h4>
+                                    </div>
+                                    <div class="headline-details">
+                                        <p>つばさロジスティックスは、加工→物流→システムまでをワンスト</p>
+                                        <p>ップで提供するSCM（サプライチェーン・マネジメント）によって</p>
+                                        <p>お客様の課題に応える「商品開発」・「工数軽減」・「流通」など</p>
+                                        <p>の改善を、日々目指しています。</p>
+                                        <button class="btn btn-primary">私たちが実現するSCM</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 imgaetop">
+                                    <div class="slide-right-img" data-aos="fade-up">
+                                        <img src="assets/images/right-slide.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -224,76 +306,6 @@
                 </div>
             </div>
         </div>
-            <div class="container-fluid">
-                <div class="row third-slide-bottom bgBlue">
-                    <div class="col-md-9 categoryCenter">
-                        <div class="row">
-                          <div class="col-md-6 middle-content">
-                              <div data-aos="fade-right">
-                                  <img src="assets/images/safty-box.png" alt="">
-                              </div>
-                          </div>
-                          <div class="col-md-6 setSlider">
-                              <div class="category-headline">
-                                  <div id="wrapper">
-                                      <div id="c1">
-                                          <img src="assets/images/logo.png" alt="logo">
-                                      </div>
-                                      <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
-                                  </div>
-                              </div>
-                              <div class="headline-underline">
-                                  <h5>当たり前から「輸送」を変える。</h5>
-                              </div>
-                              <div class="headline-details">
-                                  <p>同じように見える毎日の「運ぶ」仕事から、今日も</p>
-                                  <p>明日につながる気付きを得て、着実に「当たり前」</p>
-                                  <p>を磨き上げています。この積み重ねが品質であると</p>
-                                  <p>私たちは考えています。</p>
-                                  <button class="btn btn-primary">私たちについて</button>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="container">
-                <div class="row third-slide-bottom">
-                    <div class="col-md-9 categoryCenter">
-                        <div class="row">
-                            <div class="col-md-6 setSlider">
-                                <div class="category-headline">
-                                    <div id="wrapper">
-                                        <div id="c1">
-                                            <img src="assets/images/logo.png" alt="logo">
-                                        </div>
-                                        <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
-                                    </div>
-                                </div>
-                                <div class="headline-underlinetwo">
-                                    <h4>私たちが想いを込めて運ぶもの。<br>
-                                        食品輸送・精密機器輸送・運ぶ仕組み。</h4>
-                                </div>
-                                <div class="headline-details">
-                                    <p>つばさロジスティックスは、加工→物流→システムまでをワンスト</p>
-                                    <p>ップで提供するSCM（サプライチェーン・マネジメント）によって</p>
-                                    <p>お客様の課題に応える「商品開発」・「工数軽減」・「流通」など</p>
-                                    <p>の改善を、日々目指しています。</p>
-                                    <button class="btn btn-primary">私たちが実現するSCM</button>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="slide-right-img" data-aos="fade-up">
-                                    <img src="assets/images/right-slide.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-       </div>
-          
-        
     </section>
 
     <section class="menu-section">
@@ -303,10 +315,10 @@
                     <h3 class="text-center">ニーズに応え育んだサービス <br>
                         メニューを取り揃えています</h3>
                 </div>
-                <div class="col-md-10 categoryCenter">
-                   <div data-aos="fade-up">
-                    <img src="assets/images/category-new.png" alt="">
-                   </div>
+                <div class="col-md-10 col-12 categoryCenter">
+                    <div data-aos="fade-up">
+                        <img src="assets/images/category-new.png" alt="" width="100%">
+                    </div>
                 </div>
             </div>
         </div>
@@ -320,83 +332,79 @@
                         <div class="bgcImg">
 
                         </div>
-                        <!-- <img src="assets/images/c2.png" alt="Snow" style="width:100%;"> -->
-                        <!-- <div class="centered">
-                            <h1>One for all , All fo one</h1>
-                            <h4>地域の幸福度向上を担う「使命感共同体」</h4>
-                        </div> -->
-                      </div>
+                     
+                    </div>
                 </div>
                 <div class="col-md-12 carousel-margin categoryCenter">
 
                     <ul class="carouel_2">
-                     
-                            <div class="white-box-carousel">
-                                <div class="img-carousel">
-                                    <img src="assets/images/1st.png">
-                                </div>
-                                <div class="carousel-text">
-                                    <p>食事業を通じたイノベーシ
-                                        ョンの実現をミッションと
-                                        して、厳正な温度管理の下
-                                        、パッキングや商品管理を
-                                        担っています。</p>
-                                </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel">
+                                <img src="assets/images/1st.png">
                             </div>
-                        
-                            <div class="white-box-carousel">
-                                <div class="img-carousel sceondnd">
-                                    <img src="assets/images/2nd.png">
-                                </div>
-                                <div class="carousel-text">
-                                    <p>創業75年 大型車から小型車
-                                        まで、販売・車検整備・板
-                                        金まで幅広く対応していま
-                                        す。</p>
-                                </div>
+                            <div class="carousel-text">
+                                <p>食事業を通じたイノベーシ
+                                    ョンの実現をミッションと
+                                    して、厳正な温度管理の下
+                                    、パッキングや商品管理を
+                                    担っています。</p>
                             </div>
-                      
-                            <div class="white-box-carousel">
-                                <div class="img-carousel">
-                                    <img src="assets/images/3rd.png">
-                                </div>
-                                <div class="carousel-text">
-                                    <p>つばさホールディングス
-                                        は、「期待を超えるおせ
-                                        っかい」でグループ企業
-                                        を活性化させる、日本一
-                                        のサポート集団です！</p>
-                                </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel sceondnd">
+                                <img src="assets/images/2nd.png">
                             </div>
-                     
-                            <div class="white-box-carousel">
-                                <div class="img-carousel">
-                                    <img src="assets/images/4th.png">
-                                </div>
-                                <div class="carousel-text">
-                                    <p>各社が自社の得意とする事
-                                        業に専念できるよう、グル
-                                        ープのバックオフィス機能
-                                        をサポートしています。</p>
-                                </div>
+                            <div class="carousel-text">
+                                <p>創業75年 大型車から小型車
+                                    まで、販売・車検整備・板
+                                    金まで幅広く対応していま
+                                    す。</p>
                             </div>
-                  
-                            <div class="white-box-carousel">
-                                <div class="img-carousel sceondnd">
-                                    <img src="assets/images/5th.png">
-                                </div>
-                                <div class="carousel-text">
-                                    <p>HD昭和の森（東京都昭島
-                                        市）を拠点として、日常に
-                                        欠かせない衣食住に、ワク
-                                        ワクする暮らし方を「ON
-                                        する」もう一つの衣食住の
-                                        提案を行っています。</p>
-                                </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel">
+                                <img src="assets/images/3rd.png">
                             </div>
-                     
-                    
-                      </ul>
+                            <div class="carousel-text">
+                                <p>つばさホールディングス
+                                    は、「期待を超えるおせ
+                                    っかい」でグループ企業
+                                    を活性化させる、日本一
+                                    のサポート集団です！</p>
+                            </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel">
+                                <img src="assets/images/4th.png">
+                            </div>
+                            <div class="carousel-text">
+                                <p>各社が自社の得意とする事
+                                    業に専念できるよう、グル
+                                    ープのバックオフィス機能
+                                    をサポートしています。</p>
+                            </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel sceondnd">
+                                <img src="assets/images/5th.png">
+                            </div>
+                            <div class="carousel-text">
+                                <p>HD昭和の森（東京都昭島
+                                    市）を拠点として、日常に
+                                    欠かせない衣食住に、ワク
+                                    ワクする暮らし方を「ON
+                                    する」もう一つの衣食住の
+                                    提案を行っています。</p>
+                            </div>
+                        </div>
+
+
+                    </ul>
 
 
                 </div>
@@ -451,6 +459,8 @@
                     <h3 class="text-center text-white">ご検討・ご相談はこちらから</h3>
                     <img class="centerImg" src="assets/images/smallCar.png" alt="">
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-8 categoryCenter">
                     <div class="row">
                         <div class="col-md-4">
@@ -482,46 +492,43 @@
         </div>
     </section>
 
-
     <section class="display-service">
         <div class="container">
-                <div class="row">
-                    <div class="col-md-10 categoryCenter">
-                        <div class="row">
-                            <div class="col-md-3 displayImg">
-                                <img src="assets/images/img1.png" alt="">
-                                <h5>NISHISUNA <br>
-                                    BASE </h5>
-                                <p>〒190-0034 東京都東京都立川市
-                                    西砂町3-28-1</p>
-                            </div>
-                            <div class="col-md-3 displayImg">
-                                <img src="assets/images/img2.png" alt="">
-                                <h5>KOMAGATA <br>
-                                    BASE</h5>
-                                <p>〒190-1202 東京都西多摩郡瑞穂町大字
-                                    駒形富士山525-1</p>
-                            </div>
-                            <div class="col-md-3 displayImg">
-                                <img src="assets/images/img3.jpg" alt="">
-                                <h5>YOTSUYA <br>
-                                    BASE</h5>
-                                <p>〒183-0035 東京都府中市四谷2-18-1</p>
-                            </div>
-                            <div class="col-md-3 displayImg">
-                                <img src="assets/images/img4.png" alt="">
-                                <h5>TACHIKAWA <br>
-                                    H Q</h5>
-                                <p>〒190-0012 東京都立川市曙町2-38-5
-                                    立川ビジネスセンタービル11階</p>
-                            </div>
+            <div class="row">
+                <div class="col-md-10 categoryCenter">
+                    <div class="row">
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img1.png" alt="">
+                            <h5>NISHISUNA <br>
+                                BASE </h5>
+                            <p>〒190-0034 東京都東京都立川市
+                                西砂町3-28-1</p>
+                        </div>
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img2.png" alt="">
+                            <h5>KOMAGATA <br>
+                                BASE</h5>
+                            <p>〒190-1202 東京都西多摩郡瑞穂町大字
+                                駒形富士山525-1</p>
+                        </div>
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img3.jpg" alt="">
+                            <h5>YOTSUYA <br>
+                                BASE</h5>
+                            <p>〒183-0035 東京都府中市四谷2-18-1</p>
+                        </div>
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img4.png" alt="">
+                            <h5>TACHIKAWA <br>
+                                H Q</h5>
+                            <p>〒190-0012 東京都立川市曙町2-38-5
+                                立川ビジネスセンタービル11階</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-
-
 
     <section class="footer-section">
         <div class="container">
@@ -547,8 +554,8 @@
                     <a href="#">- 私たちの考える安全</a>
                     <a href="#">- インフォグラフィックスで見る
                         安全への取り組み</a>
-<br>
-<br>
+                    <br>
+                    <br>
                     <h6 class="mt-4">私たちのシゴト</h6>
                     <a href="#">- インタビュー</a>
                 </div>
@@ -570,14 +577,14 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/jquerymin.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-<script src="assets/js/carousel.js"></script>
+    <script src="assets/js/carousel.js"></script>
     <script src="assets/js/custom.js"></script>
 
 
-  
 
 
- 
+
+
 
 </body>
 

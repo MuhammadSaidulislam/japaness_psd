@@ -35,13 +35,74 @@
 body {
     margin: 0px;
     padding: 0px;
-   
+    font-family: "Noto Sans JP","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
 }
 /* column padding remove */
 .col-lg-12,.col-md-12{
 padding-left: 0px;
 padding-right: 0px;
 }
+
+/* preloader */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    transition: 2s;
+    z-index: 99999999999999;
+}
+
+
+.preloader:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+     background-color: #095AEA;
+    transition: 2s;
+   
+}
+
+.preloader.complete:after {
+    right: -100%;
+    transition-delay: 2s;
+}
+
+
+/* loader */
+
+.loader {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    /* transform: translate(-50%, -50%) rotate(45deg); */
+    z-index: 100000000;
+}
+.loader h1{
+    font-size: 75px;
+    color: white;
+    font-family: NotoSansCJKjp-Bold;
+}
+.loader img{
+   width: 180px;
+   height: 60px;
+}
+
+.loader .animationText{
+    position: absolute;
+}
+.preloader.complete {
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
 /* top header */
 .top-header{
 background-image: url("../images/top-header.png");
@@ -53,6 +114,7 @@ background-size: 100% 100%;
 }
 .top-header .headerText{
 margin-top: 20%;
+
 }
 .top-header .headerText h1{
     color: #fff;
@@ -127,6 +189,7 @@ margin-top: 20%;
 text-align: center;
 color: white;
 }
+
 .top-header .headerText .centered {
     position: absolute;
     bottom: 48%;
@@ -293,10 +356,7 @@ margin-top: 100px;
         font-size: 8px;
         color: red;
       }
-    .contact-section h1,p,label,h3{
-        color: black;
-        font-family: KozGoPr6N-Regular;
-      }
+
 .contact-section textarea{
     width: 100%;
     height: 200px;
@@ -322,6 +382,7 @@ margin-top: 100px;
     }
     .home-header .headerText{
     margin-top: 20%;
+
     }
     .home-header .headerText h1{
         color: #fff;
@@ -339,6 +400,10 @@ margin-top: 100px;
     text-align: center;
     color: white;
     }
+    .home-header .headerText .imgWrapper img{
+        width: 500px;
+        height: 200px;
+   }
     .home-header .headerText .centered {
         position: absolute;
         bottom: 30%;
@@ -521,7 +586,6 @@ z-index: 99999;
     height: 100%;
     background-color: #ECEDEC;
     opacity: 0.8;
-    padding: 50px 0px;
 }
 .category-details .setSlider{
     margin-top: 110px;
@@ -776,6 +840,7 @@ box-shadow: 3px 0px 21px -6px #0069d7;
 }
 .display-consultation h3{
     font-family: NotoSansCJKjp-Bold;
+    display: inline-block;
 }
 .display-consultation .centerImg{
     margin: 15px 0px;
@@ -907,7 +972,7 @@ font-family: NotoSansCJKjp-Regular;
     margin-left: 50px;
     border-radius: 15px; 
     margin-top: -20px;
-    box-shadow: 0px 0px 11px -1px #000;
+    box-shadow: 0px 10px 28px -14px #000;
 }
 .delivery-logo .delivery-paragraph p{
     font-family: NotoSansCJKjp-Medium;
@@ -925,7 +990,7 @@ font-family: NotoSansCJKjp-Regular;
     margin-left: 50px;
     border-radius: 15px;
     margin-top: -90px;
-    box-shadow: 0px 0px 11px -1px #000;
+    box-shadow: 0px 10px 28px -14px #000;
 }
 .delivery-car .delivery-car-text h1{
     font-family: NotoSansCJKjp-Bold;
@@ -943,6 +1008,10 @@ font-family: NotoSansCJKjp-Regular;
     background-color: #ECEDEC;
     padding: 100px 0px;
     box-shadow: 0px 16px 37px -24px #0069d7;
+}
+.company-section .categoryCenter{
+    margin-left: 0px;
+    transform: translate(0,0);
 }
 .company-section .carousel-margin{
     margin-top: -220px;
@@ -1119,6 +1188,10 @@ font-family: NotoSansCJKjp-Medium;
     font-size: 12px;
     letter-spacing: 0px;
 }
+.display-service .categoryCenter {
+    margin-left: 0px;
+    transform: translate(0,0);
+}
 
 .display-service .categoryCenter .displayImg img{
     width: 100%;
@@ -1220,6 +1293,13 @@ font-family: NotoSansCJKjp-Medium;
     .top-header .header-box .first-step{
        margin-top: 25px;
     }
+    .home-header .headerText .imgWrapper img{
+        width: 100%;
+        height: 200px;
+   }
+   .home-header .categoryCenter .circleBtn{
+       display: none;
+   }
     .delivery-section .delivery-right-box #wrapper #c1 h3{
         font-family: NotoSansCJKjp-Medium;
         font-size: 22px;
@@ -1278,6 +1358,66 @@ height: 80px;
         margin-left: 0px;
         border-radius: 15px;
         margin-top: 10px;
+    }
+    .category-details .slideImg-two img{
+        margin-top: 100px;
+        box-shadow: 0px 0px 58px -11px #3232f5;
+        width: 100px;
+        height: 270px;
+        /* float: right; */
+    }
+    
+    .category-details .slideImg-one img{
+        margin-top: 200px;
+        box-shadow: 0px 0px 58px -11px #3232f5;
+        width: 100px;
+        height: 270px;
+        /* float: right; */
+    }
+    .category-details .slideImg-three img{
+        box-shadow: 0px 0px 58px -11px #3232f5;
+        width: 100px;
+        height: 270px;
+        /* float: right; */
+    }
+    .display-consultation{
+        background-image: url("../images/sasas.png"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        margin-top: -47px;
+        padding: 0px 0px; 
+        box-shadow: 0px 16px 37px -24px #0069d7;
+    }
+    .display-consultation h3{
+        margin-top: 48px;
+    }
+    .employee-section .categoryCenter {
+       margin-left: 0px;
+       transform: translate(0,0);
+    }
+    .employee-section .categoryCenter #wrapper{
+        width: 100%;
+        display: inline-block;
+        justify-content:center;
+    }
+    .employee-section .categoryCenter #wrapper #c1,
+    .employee-section .categoryCenter #wrapper #c2,
+    .employee-section .categoryCenter #wrapper #c3{
+        width: 100%;
+        text-align: center;
+    
+    }
+    .category-details .third-slide-bottom .setSlider{
+        margin-top: 150px;
+    }
+    .category-details .bottom-section{
+margin-top: 250px;
+    }
+    .category-details .third-slide-bottom{
+        margin-top: 0px;
+    }
+    .imgaetop{
+        margin-top: 25px;
     }
 }
 

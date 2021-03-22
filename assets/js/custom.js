@@ -46,7 +46,7 @@ $('.owl-carousel').owlCarousel({
   loop: true,
   nav: false,
   margin: 10,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 1000,
   autoplayHoverPause: true,
   responsive: {
@@ -64,17 +64,14 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-
-// slider carousel
 $('.owl-carousel').owlCarousel({
   items: 5,
   loop: true,
   nav: true,
   margin: 10,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 1000,
   autoplayHoverPause: true,
-  navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
   responsive: {
     0: {
       items: 1,
@@ -84,12 +81,12 @@ $('.owl-carousel').owlCarousel({
 
     },
     1000: {
-      items: 5,
+      items: 7,
     }
   }
   
 })
-// collapse course js
+
 
 $('.panel-collapse').on('show.bs.collapse', function () {
   $(this).siblings('.panel-heading').addClass('active');
@@ -108,6 +105,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+
 // google map
 
 function myMap() {
@@ -117,3 +115,99 @@ function myMap() {
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   }
+
+
+// owl carousel
+
+$('.carouel_2').owlCarousel({
+  loop: true,
+  margin: 10,
+  auto: true,
+  dots: false,
+  mouseDrag: true,
+  autoplay: true,
+  autoplayTimeout: 500,
+  items: 3,
+  nav: true,
+  navText: ["<em class='fa fa-angle-left'></em>", "<em class='fa fa-angle-right'></em>"],
+   responsiveClass:true,
+    responsive:{
+         0:{
+             items:2
+         },
+         568:{
+           items:2
+         },
+         767:{
+           items:3
+         },
+         1200:{
+           items:5
+         }
+     }
+  });
+
+$('.carouel_3').owlCarousel({
+  loop: true,
+  margin: 10,
+  auto: true,
+  mouseDrag: true,
+  autoplayTimeout: 500,
+  autoplay: true,
+  dots: false,
+  items: 7,
+  nav: false,
+   navText: false,
+ responsiveClass:true,
+    responsive:{
+         0:{
+             items:1
+         },
+         568:{
+           items:2
+         },
+         767:{
+           items:5
+         },
+         1200:{
+           items:7
+         }
+     }
+  });
+
+
+
+  split = function (element) {
+    words = $(element).text().split('');
+    for (i in words) {
+      words[i] = '<span>' + words[i] + '</span>';
+    }
+    text = words.join('');
+    $(element).html(text);
+  };
+  
+  textify = function(element,method,delay) {
+    split(element);
+    $(element + ' span').css('opacity','0')
+    $(element + ' span').css('position','relative');
+    in_speed = 100;
+    count = 0;
+    setTimeout(function(){
+      count = 0;
+      $(element + ' span').each(function () {
+        if(method == 'fade'){
+          $(this).delay(0 + in_speed * count).animate({ opacity: '1' }, 200);
+        } else if(method == 'bounce'){
+          $(this).delay(0 + in_speed * count).animate({ opacity: '1','top':'-4px'}, 220,'easeOutCubic');
+          $(this).delay(0 + in_speed * count/4).animate({ opacity: '1','top':'0px'}, 220);
+        }
+        count++;
+      });
+    },delay);
+  };
+  
+  /* Now textify! */
+  textify('.dash','bounce',500);
+  textify('.sub','bounce',500);
+  textify('.bounce','bounce',500);
+  

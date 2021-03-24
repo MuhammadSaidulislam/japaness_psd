@@ -1,184 +1,640 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - multiple owl carousel</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-
-
-<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>つばさロジスティクス</title>
 
 <style>
-  ul {
-  padding: 0px;
+  .containerr {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
-ul li{
-  background: green;
-  min-height: 350px;
-  list-style: none;
-  color: #fff;
-  font-size: 40px;
-  text-align: center;
-  line-height: 350px;
+.containerr .text {
+  color: transparent;
+  border-radius: 3px;
+  background-color: rgb(206, 204, 204);
+  position: relative;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.containerr .text:before {
+  content: attr(data-title);
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all .5s ease-in-out;
+  animation: text-animation 1s 1;
 }
 
-
-.carouel_2 li{
-  background: #052f74;
+@keyframes text-animation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  80% {
+    width: 100%;
+  }
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
-.carouel_3 li{
-  background: #a313c2;
-}
-.owl-prev, .owl-next {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block !important;
-        border:0px solid black;
-        background-color: red;
-        border-radius: 50%;
-    }
-    .owl-prev { left: 80px; }
-    .owl-next { right: 80px; }
-    .owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
 </style>
 
+
+
+    <script>
+        $(window).on('load', function() {
+            $('.preloader').addClass('complete')
+        });
+     
+    </script>
 </head>
+
 <body>
 
 
-<br/>
-<h2>
-  Carousel showing 3 elements
-</h2>
-<ul class="carouel_2">
-  <li>
-    Slide 1
-  </li>
-  <li>
-    Slide 2
-  </li>
-  <li>
-    Slide 3
-  </li>
-  <li>
-    Slide 4
-  </li>
-  <li>
-    Slide 5
-  </li>
-  <li>
-    Slide 6
-  </li>
-</ul>
-<br/>
-<h2>
-  Carousel showing 5 elements
-</h2>
-<ul class="carouel_3">
-  <li>
-    Slide 1
-  </li>
-  <li>
-    Slide 2
-  </li>
-  <li>
-    Slide 3
-  </li>
-  <li>
-    Slide 4
-  </li>
-  <li>
-    Slide 5
-  </li>
-  <li>
-    Slide 6
-  </li>
-  <li>
-    Slide 7
-  </li>
-  <li>
-    Slide 8
-  </li>
-  <li>
-    Slide 9
-  </li>
-  <li>
-    Slide 10
-  </li>
-  <li>
-    Slide 11
-  </li>
-  <li>
-    Slide 12
-  </li>
-</ul>
-<!-- partial -->
-  <script src="assets/js/jquerymin.js"></script>
-<script src="assets/js/carousel.js"></script>
+    <div class="preloader containerr">
+        <div class="loader">
+            <h1 data-title="想いを届ける。" class="preload text">想いを届ける。</h1>
+            <img class="preload" src="assets/images/logo.png" alt="">
+        </div>
+    </div>
 
-<script>
 
-$('.carouel_2').owlCarousel({
-  loop: true,
-  margin: 10,
-  auto: true,
-  dots: true,
-  mouseDrag: true,
-  autoplay: true,
-  autoplayTimeout: 500,
-  items: 3,
-  nav: true,
-  navText: ["<em class='fa fa-angle-left'></em>", "<em class='fa fa-angle-right'></em>"],
-   responsiveClass:true,
-    responsive:{
-         0:{
-             items:1
-         },
-         568:{
-           items:2
-         },
-         767:{
-           items:3
-         },
-         1200:{
-           items:3
-         }
-     }
-  });
+    <section class="home-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav id="navbarSticky" class="navbar fixed-top navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo.png" alt="" width="160px" height="50px">
+                            </a>
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 navmargin">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">トップ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">私たちについて</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">会社概要</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">サービス</a>
+                                </li>
 
-$('.carouel_3').owlCarousel({
-  loop: true,
-  margin: 10,
-  auto: true,
-  dots: true,
-  mouseDrag: true,
-  autoplayTimeout: 500,
-  autoplay: true,
-  items: 5,
-  nav: true,
-   navText: ["<em class='fa fa-angle-left'></em>", "<em class='fa fa-angle-right'></em>"],
- responsiveClass:true,
-    responsive:{
-         0:{
-             items:1
-         },
-         568:{
-           items:2
-         },
-         767:{
-           items:3
-         },
-         1200:{
-           items:5
-         }
-     }
-  });
-</script>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">安全と向き合う</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">採用情報</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">お問い合わせ</a>
+                                </li>
+                                <li class="nav-item nav-black">
+                                    <button class="text-center btn" href="#">つばさHD <br> Group
+
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav id="navbarStickyTwo" class="navbar fixed-top navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo.png" alt="" width="160px" height="50px">
+                            </a>
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 navmargin">
+                                <li class="nav-item nav-black">
+                                    <button class="text-center btn" href="#">つばさHD <br> Group
+
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-8 col-12 headerText categoryCenter">
+                    <div class="row">
+                        <div class="col-md-6 col-12" data-aos="fade-right" data-aos-delay="3000">
+                            <div class="animationText">
+                                <h1 class="bounce">想いを届ける。</h1>
+                                <p class="sub">Corporate Art </p>
+                                <p class="dash">つばさロジスティックスの空</p>
+                            </div>
+                        </div>
+                        <div class="circleBtn">
+                            <a class="btn" href="#slide-down">
+                                <i class="fa fa-arrow-down"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-12 imgWrapper" data-aos="fade-left" data-aos-delay="3000">
+                            <img src="assets/images/car.png" alt="">
+                            <div class="centered">
+                                <button class="btn">採用情報を見る</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-11 categoryCenter">
+                    <div class="logo-slider" id="slide-down">
+                        <ul class="carouel_3">
+                            <img src="assets/images/access.png">
+                            <img src="assets/images/recruit.png">
+                            <img src="assets/images/safty.png">
+                            <img src="assets/images/movie.png">
+                            <img src="assets/images/service.png">
+                            <img src="assets/images/company.png">
+                            <img src="assets/images/contact.PNG">
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="container-fluid dateBackground">
+                    <div class="container-fluid bgcColor">
+                        <div class="col-md-10 categoryCenter">
+                            <div class="row">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">プレス</button></div>
+                                <div class="col-md-9">
+                                    <p>新サービス〇〇〇〇をリリースしました。食品物流の〇〇の課題を〇〇％削減。〇〇〇〇でビジネス大賞2021〇〇部門〇〇賞を受賞しました。</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">メディア</button></div>
+                                <div class="col-md-9">
+                                    <p>〇〇紙に〇〇〇〇の取り組みが掲載されました。　　→ 詳細はこちら</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">お知らせ</button></div>
+                                <div class="col-md-9">
+                                    <p>＜夏季休業のお知らせ＞ 2022年8月16～18日は、夏季休業いたします。</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-1 date">2021.6.1</div>
+                                <div class="col-md-2"><button class="btn">採用情報</button></div>
+                                <div class="col-md-9">
+                                    <p>2022年 新卒採用の募集を開始しましました。サンプルテキストサンプルテキスト</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-details">
+        <div class="container-fluid imgColorset">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-12 categoryCenter">
+                            <div class="row">
+                                <div class="col-md-4 col-12 setSlider">
+                                    <div class="category-headline">
+                                        <div id="wrapper">
+                                            <div id="c1">
+                                                <img src="assets/images/logo.png" alt="logo">
+                                            </div>
+                                            <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="headline-underline">
+                                        <h5>当たり前から「輸送」を変える。</h5>
+                                    </div>
+                                    <div class="headline-details">
+                                        <p>同じように見える毎日の「運ぶ」仕事から、今日も</p>
+                                        <p>明日につながる気付きを得て、着実に「当たり前」</p>
+                                        <p>を磨き上げています。この積み重ねが品質であると</p>
+                                        <p>私たちは考えています。</p>
+                                        <button class="btn btn-primary">私たちについて</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12">
+                                    <div class="row">
+                                        <div class="col-md-4 col-4">
+                                            <div class="slideImg-one" data-aos="fade-up-right">
+                                                <img src="assets/images/slider1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-4">
+                                            <div class="slideImg-two" data-aos="fade-up-right">
+                                                <img src="assets/images/slider2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-4">
+                                            <div class="slideImg-three" data-aos="fade-up-right">
+                                                <img src="assets/images/slider.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row third-slide-bottom bgBlue">
+                        <div class="col-md-9 col-12 categoryCenter">
+                            <div class="row">
+                                <div class="col-md-6 col-12 middle-content">
+                                    <div data-aos="fade-right">
+                                        <img src="assets/images/safty-box.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 setSlider">
+                                    <div class="category-headline">
+                                        <div id="wrapper">
+                                            <div id="c1">
+                                                <img src="assets/images/logo.png" alt="logo">
+                                            </div>
+                                            <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="headline-underline">
+                                        <h5>当たり前から「輸送」を変える。</h5>
+                                    </div>
+                                    <div class="headline-details">
+                                        <p>同じように見える毎日の「運ぶ」仕事から、今日も</p>
+                                        <p>明日につながる気付きを得て、着実に「当たり前」</p>
+                                        <p>を磨き上げています。この積み重ねが品質であると</p>
+                                        <p>私たちは考えています。</p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container bottom-section">
+                    <div class="row third-slide-bottom">
+                        <div class="col-md-9 col-12 categoryCenter">
+                            <div class="row">
+                                <div class="col-md-6 col-12 setSlider">
+                                    <div class="category-headline">
+                                        <div id="wrapper">
+                                            <div id="c1">
+                                                <img src="assets/images/logo.png" alt="logo">
+                                            </div>
+                                            <div id="c2"><img src="assets/images/smallCar.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="headline-underlinetwo">
+                                        <h4>私たちが想いを込めて運ぶもの。<br>
+                                            食品輸送・精密機器輸送・運ぶ仕組み。</h4>
+                                    </div>
+                                    <div class="headline-details">
+                                        <p>つばさロジスティックスは、加工→物流→システムまでをワンスト</p>
+                                        <p>ップで提供するSCM（サプライチェーン・マネジメント）によって</p>
+                                        <p>お客様の課題に応える「商品開発」・「工数軽減」・「流通」など</p>
+                                        <p>の改善を、日々目指しています。</p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 imgaetop">
+                                    <div class="slide-right-img" data-aos="fade-up">
+                                        <img src="assets/images/right-slide.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">ニーズに応え育んだサービス <br>
+                        メニューを取り揃えています</h3>
+                </div>
+                <div class="col-md-10 col-12 categoryCenter">
+                    <div data-aos="fade-up">
+                        <img src="assets/images/category-new.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-11 categoryCenter">
+                    <div class="carousel-bg">
+                        <div class="bgcImg">
+
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="col-md-12 carousel-margin categoryCenter">
+
+                    <ul class="carouel_2">
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel">
+                                <img src="assets/images/1st.png">
+                            </div>
+                            <div class="carousel-text">
+                                <p>食事業を通じたイノベーシ
+                                    ョンの実現をミッションと
+                                    して、厳正な温度管理の下
+                                    、パッキングや商品管理を
+                                    担っています。</p>
+                            </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel sceondnd">
+                                <img src="assets/images/2nd.png">
+                            </div>
+                            <div class="carousel-text">
+                                <p>創業75年 大型車から小型車
+                                    まで、販売・車検整備・板
+                                    金まで幅広く対応していま
+                                    す。</p>
+                            </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel">
+                                <img src="assets/images/3rd.png">
+                            </div>
+                            <div class="carousel-text">
+                                <p>つばさホールディングス
+                                    は、「期待を超えるおせ
+                                    っかい」でグループ企業
+                                    を活性化させる、日本一
+                                    のサポート集団です！</p>
+                            </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel">
+                                <img src="assets/images/4th.png">
+                            </div>
+                            <div class="carousel-text">
+                                <p>各社が自社の得意とする事
+                                    業に専念できるよう、グル
+                                    ープのバックオフィス機能
+                                    をサポートしています。</p>
+                            </div>
+                        </div>
+
+                        <div class="white-box-carousel">
+                            <div class="img-carousel sceondnd">
+                                <img src="assets/images/5th.png">
+                            </div>
+                            <div class="carousel-text">
+                                <p>HD昭和の森（東京都昭島
+                                    市）を拠点として、日常に
+                                    欠かせない衣食住に、ワク
+                                    ワクする暮らし方を「ON
+                                    する」もう一つの衣食住の
+                                    提案を行っています。</p>
+                            </div>
+                        </div>
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="employee-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 categoryCenter">
+                    <div id="wrapper">
+                        <div id="c3"><img src="assets/images/smallCar.png" alt=""></div>
+                        <div id="c2"><img src="assets/images/logo.png" alt=""></div>
+                        <div id="c1">
+                            <h1>の採用情報</h1>
+                        </div>
+                    </div>
+                    <div class="paragraphText">
+                        <p>つばさロジスティクスは、人に期待し、人に投資するチームです。当社の最大の魅力は、「人間関係」が良いとこ</p>
+                        <p>ろ。いつだって意見交換ができる、仕事に妥協せず本気でぶつかり合い、認め合える環境です。</p>
+                        <p>どうしたら人も会社も成長していくのか？一人ではなくみんなで「議論し深めよう」が浸透している職場です。</p>
+                        <p>「運送会社」を中心に様々なグループ会社をつなぎ、地域の方々にも喜びをお届けする仲間を募集しています。</p>
+                    </div>
+                    <div class="employe-bottom text-center">
+                        <button class="btn">募集要項</button>
+                        <p class="text-center">グループの強みを活かしたキャリアプランもご用意しています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-container">
+        <section class="customer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="imageCenterText">お客様の声に耳を傾け、変化し続ける <br>
+                            社風があるからこそ、私たちにできる <br>
+                            ことがある。</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="display-consultation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-center text-white">ご検討・ご相談はこちらから</h3>
+                    <img class="centerImg" src="assets/images/smallCar.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 categoryCenter">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="whiteBox">
+                                <img src="assets/images/1.PNG" alt="">
+                            </div>
+                            <p class="text-center mt-5">食品・精密機器の輸送の
+                                ご依頼・ご相談</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="whiteBox">
+                                <img src="assets/images/2.PNG" alt="">
+                            </div>
+                            <div class="message-blue">
+                                <p class="message-content">一緒に働きませんか？</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="whiteBox">
+                                <img src="assets/images/3.PNG" alt="">
+                            </div>
+                            <p> <i class="fa fa-phone-alt"></i> 042-506-1151 <span class="smallText">（大代表）</span> </p>
+                            <p class="text-center">食品・精密機器の輸送の
+                                ご依頼・ご相談</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="display-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 categoryCenter">
+                    <div class="row">
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img1.png" alt="">
+                            <h5>NISHISUNA <br>
+                                BASE </h5>
+                            <p>〒190-0034 東京都東京都立川市
+                                西砂町3-28-1</p>
+                        </div>
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img2.png" alt="">
+                            <h5>KOMAGATA <br>
+                                BASE</h5>
+                            <p>〒190-1202 東京都西多摩郡瑞穂町大字
+                                駒形富士山525-1</p>
+                        </div>
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img3.jpg" alt="">
+                            <h5>YOTSUYA <br>
+                                BASE</h5>
+                            <p>〒183-0035 東京都府中市四谷2-18-1</p>
+                        </div>
+                        <div class="col-md-3 displayImg">
+                            <img src="assets/images/img4.png" alt="">
+                            <h5>TACHIKAWA <br>
+                                H Q</h5>
+                            <p>〒190-0012 東京都立川市曙町2-38-5
+                                立川ビジネスセンタービル11階</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-4 left-footer">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <p>運送事業者番号　460001693</p>
+                    <button class="btn btn-outline-dark">つばさトラック事業協同組合</button>
+                </div>
+                <div class="col-md-3">
+                    <h6>私たちについて</h6>
+                    <a href="#">- 企業理念</a>
+                    <a href="#">- ビジュアルアイデンティティに込めた想い</a>
+                    <a href="#">- 会社概要</a>
+                    <a href="#">- グループ会社</a>
+                    <a href="#">- 拠点</a>
+                    <h6 class="mt-4">サービス</h6>
+                    <a href="#">- サービス内容</a>
+                    <a href="#">- つばさロジスティックスの SCM</a>
+                </div>
+                <div class="col-md-3">
+                    <h6>安全と向き合う</h6>
+                    <a href="#">- 私たちの考える安全</a>
+                    <a href="#">- インフォグラフィックスで見る
+                        安全への取り組み</a>
+                    <br>
+                    <br>
+                    <h6 class="mt-4">私たちのシゴト</h6>
+                    <a href="#">- インタビュー</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="side-footer-button">
+                        <button class="btn btn-warning">お問い合わせ</button>
+                    </div>
+                    <div class="side-footer-button mt-4">
+                        <button class="btn btn-primary">採用情報</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
+    <script src="assets/js/solid.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquerymin.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+
+
+
+
 
 </body>
+
 </html>

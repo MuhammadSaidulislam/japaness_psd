@@ -210,5 +210,5 @@ $('.carouel_3').owlCarousel({
   textify('.dash','bounce',500);
   textify('.sub','bounce',500);
   textify('.bounce','bounce',500);
-  textify('.preload','bounce',500);
+  textify('.preload','fade',500);
   

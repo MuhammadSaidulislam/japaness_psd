@@ -18,73 +18,19 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>つばさロジスティクス</title>
-
-<style>
-  .containerr {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-}
-.containerr .text {
-  color: transparent;
-  border-radius: 3px;
-  background-color: rgb(206, 204, 204);
-  position: relative;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-.containerr .text:before {
-  content: attr(data-title);
-  background: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all .5s ease-in-out;
-  animation: text-animation 1s 1;
-}
-
-@keyframes text-animation {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 100%;
-  }
-  80% {
-    width: 100%;
-  }
-  90% {
-    width: 100%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-</style>
-
-
-
     <script>
         $(window).on('load', function() {
             $('.preloader').addClass('complete')
         });
-     
     </script>
 </head>
 
 <body>
 
 
-    <div class="preloader containerr">
+    <div class="preloader">
         <div class="loader">
-            <h1 data-title="想いを届ける。" class="preload text">想いを届ける。</h1>
+            <h1 class="preload">想いを届ける。</h1>
             <img class="preload" src="assets/images/logo.png" alt="">
         </div>
     </div>
@@ -312,7 +258,7 @@
                                         <p>明日につながる気付きを得て、着実に「当たり前」</p>
                                         <p>を磨き上げています。この積み重ねが品質であると</p>
                                         <p>私たちは考えています。</p>
-                                       
+                                        <button class="btn btn-primary">私たちについて</button>
                                     </div>
                                 </div>
                             </div>
@@ -335,13 +281,14 @@
                                     <div class="headline-underlinetwo">
                                         <h4>私たちが想いを込めて運ぶもの。<br>
                                             食品輸送・精密機器輸送・運ぶ仕組み。</h4>
+                                           
                                     </div>
                                     <div class="headline-details">
                                         <p>つばさロジスティックスは、加工→物流→システムまでをワンスト</p>
                                         <p>ップで提供するSCM（サプライチェーン・マネジメント）によって</p>
                                         <p>お客様の課題に応える「商品開発」・「工数軽減」・「流通」など</p>
                                         <p>の改善を、日々目指しています。</p>
-                                        
+                                        <button class="btn btn-primary">私たちが実現するSCM</button>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 imgaetop">

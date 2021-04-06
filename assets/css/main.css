@@ -375,18 +375,20 @@ margin-top: 100px;
 
     /* Home header section */
     
-    .home-header{
-    background-image: url("../images/home-header.png");
+.home-header{
+    background-image: linear-gradient(rgba(157, 193, 224, 0.6), rgba(0, 0, 0, 0.2)), 
+    url('../images/home-header.png');
     height: 430px;
     width: auto;
     background-position: center center; 
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    }
-    .home-header .headerText{
+}
+
+.home-header .headerText{
     margin-top: 20%;
 
-    }
+}
     .home-header .headerText h1{
         color: #fff;
         letter-spacing: 3px;
@@ -398,6 +400,8 @@ margin-top: 100px;
         font-size: 12px;
         font-family: NotoSansCJKjp-Light;
         letter-spacing: 2px;
+        font-weight: 600;
+        margin-bottom: 0px;
     }
     .home-header .headerText .imgWrapper{
         position: relative;
@@ -469,7 +473,7 @@ margin-top: 100px;
     background-size: 200% 100%;   
     background-position: right bottom;   
     transition: all .5s ease-out;
-    
+    padding: 11px 5px;
 }
 .nav-black:hover{
     background-position: left bottom;
@@ -477,7 +481,7 @@ margin-top: 100px;
     
 }
 .nav-black button{
- font-size: 10px;
+   font-size: 10px;
     color: white;
     letter-spacing: 1px;
     padding: 16px 8px;
@@ -648,23 +652,26 @@ z-index: 99999;
 }
 .category-details .slideImg-two img{
     margin-top: 100px;
-    box-shadow: 0px 0px 58px -11px #3232f5;
+    box-shadow: 0px 8px 11px -9px #3232f5;
     width: 130px;
     height: 270px;
     float: right;
+    border-radius: 5px;
 }
 
 .category-details .slideImg-one img{
     margin-top: 200px;
-    box-shadow: 0px 0px 58px -11px #3232f5;
+    box-shadow: 0px 8px 11px -9px #3232f5;
     width: 130px;
     height: 270px;
     float: right;
+    border-radius: 5px;
 }
 .category-details .slideImg-three img{
-    box-shadow: 0px 0px 58px -11px #3232f5;
+    box-shadow: 0px 8px 11px -9px #3232f5;
     width: 130px;
     height: 270px;
+    border-radius: 5px;
     float: right;
 }
 .category-details .third-slide-bottom {

@@ -386,7 +386,7 @@ margin-top: 100px;
 }
 
 .home-header .headerText{
-    margin-top: 20%;
+    margin-top: 17%;
 
 }
     .home-header .headerText h1{
@@ -722,6 +722,25 @@ border-radius: 5px;
 
 
 /* owl carousel slider */
+@keyframes ticker-kf {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-108rem, 0, 0);
+    }
+  }
+  
+  .img-ticker {
+    animation: ticker-kf 10s linear infinite;
+  }
+  .img-ticker img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
 
 .owl-prev, .owl-next {
     width: 50px;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Continuous Image Ticker Built With Pure CSS</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css'>
+  
+  
+  <style>
+      @keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-108rem, 0, 0);
+  }
+}
+
+.img-ticker {
+  animation: ticker-kf 5s linear infinite;
+}
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
+<div class="overflow-hidden">
+  <div class="flex -mx-4 img-ticker">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/access.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/recruit.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/safty.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/movie.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/service.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/company.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/contact.PNG">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/access.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/recruit.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/safty.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/movie.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/service.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/company.png">
+    <img class="w-64 mx-4 self-start flex-none" src="assets/images/contact.PNG">
+    
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

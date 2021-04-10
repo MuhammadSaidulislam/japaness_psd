@@ -129,7 +129,7 @@ $('.carouel_2').owlCarousel({
   autoplayTimeout: 500,
   items: 5,
   nav: true,
-  navText: ["<em class='fa fa-angle-left'></em>", "<em class='fa fa-angle-right'></em>"],
+  navText: ["<em class='fa fa-arrow-left'></em>", "<em class='fa fa-arrow-right'></em>"],
    responsiveClass:true,
     responsive:{
          0:{
